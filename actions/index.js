@@ -1,4 +1,10 @@
+const counterStore = require('../stores/counterStore');
+
 module.exports = {
-  // Your implementation here.
-  // Hint: We need two actions!
+  increment: function() {
+    counterStore.increment()
+  },
+  decrement: function() {
+    counterStore.decrement()
+  }
 };
