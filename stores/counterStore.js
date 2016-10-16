@@ -1,14 +1,17 @@
 const Store = require('./Store.js')
 
 class CounterStore extends Store {
-  // Your implementation here.
-  // Hint: extend the Store class!
+  constructor () {
+    super(0);
+  }
+
+
   increment() {
-    this.state += 1;
+    this.setState(this.getState() + 1);
   }
 
   decrement() {
-    this.state -= 1;
+    this.setState(this.getState() - 1);
   }
 
 }

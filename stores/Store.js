@@ -1,7 +1,7 @@
 class Store {
   constructor (state) {
     
-    this.state = state ? state : 0
+    this.state = state
 
     this.listeners = [];
   }
